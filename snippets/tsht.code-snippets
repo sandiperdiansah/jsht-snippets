@@ -1,0 +1,59 @@
+{
+    "Function Generic": {
+        "prefix": "fng",
+        "body": ["const ${1:name} = <${2:T}>() => {", "    $0", "};"],
+        "description": "Arrow Function Generic",
+    },
+
+    "Class Generic": {
+        "prefix": "clg",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}<${1:T}> {",
+            "    $0",
+            "}",
+        ],
+        "description": "Class Generic",
+    },
+
+    "Class With Constructor Generic": {
+        "prefix": "clcg",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}<${1:T}> {",
+            "    constructor($0) {",
+            "        ",
+            "    }",
+            "}",
+        ],
+        "description": "Class With Constructor Generic",
+    },
+
+    "Type Alias": {
+        "prefix": "typ",
+        "body": ["type ${1:Name} = {", "    $0", "};"],
+        "description": "Type Alias",
+    },
+
+    "Type Alias Generic": {
+        "prefix": "typg",
+        "body": ["type ${1:Name}<${2:T}> = {", "    $0", "};"],
+        "description": "Type Alias Generic",
+    },
+
+    "Interface": {
+        "prefix": "intf",
+        "body": ["interface ${1:Name} {", "    $0", "}"],
+        "description": "Interface",
+    },
+
+    "Interface Generic": {
+        "prefix": "intfg",
+        "body": ["interface ${1:Name}<${2:T}> {", "    $0", "}"],
+        "description": "Interface Generic",
+    },
+
+    "Enum": {
+        "prefix": "enum",
+        "body": ["enum ${1:Name} {", "    $0", "}"],
+        "description": "Enum",
+    },
+}

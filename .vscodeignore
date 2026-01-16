@@ -1,0 +1,28 @@
+# Ignore development files
+.vscode/**
+.vscode-test/**
+.gitignore
+.git/**
+.github/**
+
+# Ignore documentation for development
+vsc-extension-quickstart.md
+
+# Ignore node modules if any
+node_modules/**
+
+# Ignore test files
+**/*.test.js
+**/*.test.ts
+**/*.spec.js
+**/*.spec.ts
+
+# Ignore source maps
+**/*.map
+
+# Ignore build artifacts
+*.vsix
+
+# Ignore editor files
+.DS_Store
+*.log

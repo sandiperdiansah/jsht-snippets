@@ -1,0 +1,116 @@
+{
+    "Function": {
+        "prefix": "fn",
+        "body": ["const ${1:name} = () => {", "    $0", "};"],
+        "description": "Arrow Function",
+    },
+
+    "For Loop": {
+        "prefix": "for",
+        "body": [
+            "for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
+            "    $0",
+            "}",
+        ],
+        "description": "For Loop",
+    },
+
+    "While Loop": {
+        "prefix": "while",
+        "body": ["while ($0) {", "    ", "}"],
+        "description": "While Loop",
+    },
+
+    "Do While Loop": {
+        "prefix": "dowhile",
+        "body": ["do {", "    $0", "} while (condition);"],
+        "description": "Do While Loop",
+    },
+
+    "ForEach Loop": {
+        "prefix": "foreach",
+        "body": ["${1:array}.forEach((${2:item}) => {", "    $0", "});"],
+        "description": "ForEach Loop",
+    },
+
+    "For In Loop": {
+        "prefix": "forin",
+        "body": ["for (const ${1:key} in ${2:object}) {", "    $0", "}"],
+        "description": "For In Loop",
+    },
+
+    "For Of Loop": {
+        "prefix": "forof",
+        "body": ["for (const ${1:item} of ${2:array}) {", "    $0", "}"],
+        "description": "For Of Loop",
+    },
+
+    "Map": {
+        "prefix": "map",
+        "body": ["${1:array}.map((${2:item}) => {", "    $0", "});"],
+        "description": "Map",
+    },
+
+    "If Statement": {
+        "prefix": "if",
+        "body": ["if ($0) {", "    ", "}"],
+        "description": "If Statement",
+    },
+
+    "Switch Statement": {
+        "prefix": "switch",
+        "body": [
+            "switch ($0) {",
+            "    case value:",
+            "        break;",
+            "    default:",
+            "        break;",
+            "}",
+        ],
+        "description": "Switch Statement",
+    },
+
+    "Class": {
+        "prefix": "cl",
+        "body": ["class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} {", "    $0", "}"],
+        "description": "Class",
+    },
+
+    "Class With Constructor": {
+        "prefix": "clc",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} {",
+            "    constructor($0) {",
+            "        ",
+            "    }",
+            "}",
+        ],
+        "description": "Class With Constructor",
+    },
+
+    "Try Catch": {
+        "prefix": "tryc",
+        "body": [
+            "try {",
+            "    $0",
+            "} catch (error) {",
+            "    console.error(error);",
+            "}",
+        ],
+        "description": "Try Catch",
+    },
+
+    "Try Catch Finally": {
+        "prefix": "trycf",
+        "body": [
+            "try {",
+            "    $0",
+            "} catch (error) {",
+            "    console.error(error);",
+            "} finally {",
+            "    ",
+            "}",
+        ],
+        "description": "Try Catch Finally",
+    },
+}

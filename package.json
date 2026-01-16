@@ -1,0 +1,96 @@
+{
+    "name": "jsht-snippets",
+    "displayName": "JSHT SNIPPETS",
+    "description": "Snippets for modern JavaScript and TypeScript developers",
+    "version": "1.0.0",
+    "license": "MIT",
+    "icon": "logo.png",
+    "publisher": "JSHT",
+    "author": {
+        "name": "JSHT"
+    },
+    "scripts": {
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sandiperdiansah/jsht-snippets.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sandiperdiansah/jsht-snippets/issues"
+    },
+    "homepage": "https://github.com/sandiperdiansah/jsht-snippets#readme",
+    "keywords": [
+        "snippets",
+        "code-snippets",
+        "javascript",
+        "typescript",
+        "react",
+        "nextjs",
+        "next.js",
+        "jsx",
+        "tsx"
+    ],
+    "engines": {
+        "vscode": "^1.108.1"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/jsht.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/jsht.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/jsht.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/jsht.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/tsht.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/tsht.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/react/jsx.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/react/tsx.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/react/jsx.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react/tsx.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/nextjs/jsx.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/nextjs/tsx.code-snippets"
+            }
+        ]
+    },
+    "packageManager": "pnpm@10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48",
+    "devDependencies": {
+        "prettier": "^3.8.0"
+    }
+}
